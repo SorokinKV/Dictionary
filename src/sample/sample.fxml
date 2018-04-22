@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <HBox>
+    <TextField fx:id="inputText" maxWidth="Infinity" onAction="#addBtnClick" HBox.hgrow="ALWAYS" />
+    <Button alignment="BOTTOM_RIGHT" onAction="#addBtnClick" text="Перевести" />
+    </HBox>
+
+   <TextArea fx:id="resultWord" editable="false" prefHeight="20.0" prefWidth="Infinity" stylesheets="@style.css" wrapText="true">
+      <font>
+         <Font name="Times New Roman" size="35.0" />
+      </font></TextArea>
+    <TextArea fx:id="result" editable="false" VBox.vgrow="ALWAYS" />
+
+
+</VBox>
